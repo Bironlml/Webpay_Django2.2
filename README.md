@@ -28,7 +28,8 @@ Estas son las tarjetas para poder probar en la aplicacion del webpay en modo de 
     Fecha de Expiracion: Cualquier fecha
     Resultado: Genera transacciones rechazadas.
 
-    [!]IMPORTANTE:Cuando aparece un formulario de autenticación con RUT y clave, se debe usar el RUT *11.111.111-1* y la clave *123*.
+    [!]IMPORTANTE:Cuando aparece un formulario de autenticación con RUT y clave,
+    se debe usar el RUT *11.111.111-1* y la clave *123*.
 
 # CREAR ENTORNO VIRTUAL [VENV]
 
@@ -56,7 +57,8 @@ Estas son las tarjetas para poder probar en la aplicacion del webpay en modo de 
     2- Escribir lo siguiente en la consola para desactivarlo.
     - deactivate
     
-    [!]IMPORTANTE: Si les tira algun error por consola, hacerlo desde CMD y no de PS. (Para entrar a la CMD deben escribir cmd en consola y listo)
+    [!]IMPORTANTE: Si les tira algun error por consola, hacerlo desde CMD y no de PS. 
+    (Para entrar a la CMD deben escribir cmd en consola y listo)
  
 # INSTALACION DE LOS REQUIREMENTS [REQUIREMENTS.TXT]
 
