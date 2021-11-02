@@ -76,9 +76,6 @@ Estas son las tarjetas para poder probar en la aplicacion del webpay en modo de 
     
     Descripcion de comandos globales:
     -> python manage.py runserver [Encender el servidor]
-    -> python manage.py makemigrations [Corrobora si hay cambios o no en el modelo]
-    -> python manage.py migrate [Realiza las migraciones]
-    -> python manage.py createsuperuser [Crea el usuario ADMIN del administrador de Django]
     
    
 
