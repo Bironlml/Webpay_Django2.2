@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Pagar aqui</title>
+    </head>
+
+    <body>
+        <h1>pagar</h1>
+        <p>Selecciona Pagar para redirigir a Webpay</p> 
+       
+       
+        <form name="pay" action="/webpay-plus-create" method="POST">{% csrf_token %}
+        
+        <td></td>
+        <td><strong>Total</strong></td>
+        <td><strong>{{total}}</strong><input name="total" hidden value="{{total}}" /></td>
+        <td><button>Pagar</button></td>       
+        
+    </body>
+
+</html>

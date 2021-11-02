@@ -54,7 +54,7 @@ ROOT_URLCONF = 'Project_webpay.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['../Webpay_Django2.2/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
