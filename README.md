@@ -30,7 +30,46 @@ Estas son las tarjetas para poder probar en la aplicacion del webpay en modo de 
 
     [!]IMPORTANTE:Cuando aparece un formulario de autenticación con RUT y clave,
     se debe usar el RUT *11.111.111-1* y la clave *123*.
+    
+# CREACION DE TRANSACCIÓN [webpay_plus_create]
 
+Permite inicializar una transacción en Webpay. Como respuesta a la invocación se genera un token que representa en forma única una transacción.
+
+Para crear una transacción basta llamar al método Transaction.create()
+
+1.- Parametros buy_order - String
+
+    Orden de compra de la tienda. Este número debe ser único para cada transacción. 
+    Largo máximo: 26. La orden de compra puede tener: 
+    Números, letras, mayúsculas y minúsculas, y los signos |_=&%.,~:/?[+!@()>-
+
+2.- Parametros session_id - String
+
+    Identificador de sesión, uso interno de comercio, este valor es devuelto al final de la transacción. 
+    Largo máximo: 61
+
+3.- Parametros amount - Int
+
+    Monto de la transacción
+    Largo máximo: 17
+    
+4.- Parametros return_url - String
+
+    URL del comercio, a la cual Webpay redireccionará posterior al proceso de autorización. 
+    Largo máximo: 256
+  
+# CONFIRMACION DE UNA TRANSACCIÓN [commitpay]
+Permite confirmar y obtener el resultado de la transacción una vez que Webpay ha resuelto su autorización financiera.
+
+Cuando el comercio retoma el control mediante return_url debes confirmar y obtener el resultado de una transacción usando el método Transaction.commit().
+  
+Parámetros Transaction.commit
+
+1.- Parametros token - String
+
+    Token de la transacción. Largo: 64. (Se envía en la URL, no en el body)
+ 
+ 
 # CREAR ENTORNO VIRTUAL [VENV]
 
 1.- Dirigirse a la Carpeta "Project_webpay" por la consola [CMD o VScode]
